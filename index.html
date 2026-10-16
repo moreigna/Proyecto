@@ -1,278 +1,397 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venerable Glicerio Landriani</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
 
-    <header id="inicio">
-        <h1>Venerable Glicerio Landriani</h1>
-        <h2>Escolapio, catequista y modelo de entrega</h2>
-        <p>Una vida dedicada a la fe y al servicio de los niños y los pobres.</p>
-    </header>
+  <!-- MENÚ DE NAVEGACIÓN -->
+  <header class="topbar">
+    <div class="nav-wrap">
+      <a class="brand" href="#inicio">Glicerio Landriani</a>
 
-    <hr>
+      <nav aria-label="Menú principal">
+        <a href="#quien-fue">¿Quién fue?</a>
+        <a href="#vida">Vida</a>
+        <a href="#mapa">Mapa</a>
+        <a href="#obra">Obra</a>
+        <a href="#testimonio">Testimonio</a>
+        <a href="#iglesia">Iglesia y Escuelas Pías</a>
+        <a href="#legado">Legado</a>
+        <a href="#oracion">Oración</a>
+        <a href="#fuentes">Fuentes</a>
+      </nav>
+    </div>
+  </header>
 
-    <nav>
-        <h2>Menú de navegación</h2>
-        <ul>
-            <li><a href="#quien-fue">¿Quién fue?</a></li>
-            <li><a href="#vida">Vida</a></li>
-            <li><a href="#obra">Obra</a></li>
-            <li><a href="#testimonio">Testimonio</a></li>
-            <li><a href="#iglesia">Iglesia y Escuelas Pías</a></li>
-            <li><a href="#legado">Legado</a></li>
-            <li><a href="#oracion">Oración</a></li>
-            <li><a href="#fuentes">Fuentes</a></li>
-        </ul>
-    </nav>
+  <!-- PORTADA -->
+  <header class="hero" id="inicio">
+    <div class="hero-inner">
+      <div class="eyebrow">
+        Escolapio · Catequista · Modelo de entrega
+      </div>
 
-    <hr>
+      <h1>Venerable<br>Glicerio Landriani</h1>
 
-    <main>
+      <div class="hero-rule"></div>
 
-        <section id="quien-fue">
-            <h2>¿Quién fue?</h2>
+      <p>
+        Una vida joven dedicada a la fe, la catequesis
+        y el servicio a los niños y a los pobres.
+      </p>
+    </div>
+  </header>
 
-            <p>
-                Glicerio Landriani fue un colaborador de san José de
-                Calasanz durante los primeros años de las Escuelas Pías.
-                Se destacó por su entusiasmo, su trabajo como catequista
-                y su dedicación a los niños y a los pobres.
-            </p>
+  <main>
 
-            <p>
-                Su historia refleja una transformación personal:
-                pasó de buscar una carrera eclesiástica a entregarse
-                generosamente al servicio de los demás.
-            </p>
+    <!-- QUIÉN FUE -->
+    <section id="quien-fue" class="section-card">
+      <p class="section-kicker">Conociendo su historia</p>
+      <h2>¿Quién fue?</h2>
 
-            <p><strong>Imagen de Glicerio Landriani:</strong></p>
-            <img src="glicerio.jpg"
-                 alt="Imagen de Glicerio Landriani"
-                 width="300">
-        </section>
+      <div class="intro-grid">
+        <div>
+          <p>
+           Glicerio Landriani (1588–1618) fue un joven noble italiano que renunció
+            a su riqueza y a una prometedora carrera en la corte papal para convertirse
+            en uno de los primeros colaboradores de San José de Calasanz en las Escuelas
+            Pías. Tras vivir una juventud rodeada de lujos en Roma, experimentó una profunda
+            conversión espiritual al ver la miseria de los niños de la calle, lo que lo
+            llevó a ingresar a la orden escolapia en 1612.
+          </p>
 
-        <hr>
+          <p>
+            Su historia refleja el poder de un giro radical y humano: cómo la verdadera
+            grandeza no está en los títulos ni en los bienes materiales, sino en la
+            capacidad de transformar el propio destino por amor y servicio a los demás.
+            Al despojarse de sus privilegios para convertirse en maestro de los más olvidados,
+            su vida se transformó en un testimonio de compasión universal y en un modelo
+            pedagógico basado en el afecto y la paciencia. Fallecido prematuramente a los
+            29 años y declarado Venerable en 1931, su legado sigue vivo hoy como el gran
+            referente y patrono de los jóvenes del Movimiento Calasanz.
+          </p>
+        </div>
 
-        <section id="vida">
-            <h2>Su vida</h2>
+        <div class="image-placeholder">
+          <div class><img src=../img/glicerio.jpg></div>
+          <strong>Glicerio Landriani</strong>
+          
+        </div>
+      </div>
+    </section>
 
-            <p>
-                Estos son los momentos principales de la vida
-                de Glicerio Landriani.
-            </p>
+    <!-- VIDA Y LÍNEA DE TIEMPO -->
+    <section id="vida" class="section-card">
+      <p class="section-kicker">1588–1618</p>
+      <h2>Su vida: línea de tiempo</h2>
 
-            <h3>1 de marzo de 1588: Nacimiento</h3>
-            <p>
-                Nació en Milán, en una familia distinguida.
-                Desde joven, él y su hermano Fabrizio deseaban
-                servir a la Iglesia.
-            </p>
+      <p>
+        Estos son algunos de los momentos principales
+        de la vida de Glicerio Landriani.
+      </p>
 
-            <h3>1610-1611: Conoce las Escuelas Pías</h3>
-            <p>
-                Conoció la obra de las Escuelas Pías y a su fundador,
-                san José de Calasanz. Encontró entre los niños una
-                vocación que marcaría su vida.
-            </p>
+      <div class="timeline">
 
-            <h3>1611-1612: Escuchar al corazón</h3>
-            <p>
-                Buscó consejo y acompañamiento espiritual del Padre
-                Domingo, lo que lo ayudó a conocerse mejor y a vivir
-                de manera más consciente y solidaria.
-            </p>
+        <article class="event">
+          <div class="date">1 de marzo de 1588</div>
+          <h3>Nacimiento en Milán</h3>
+          <p>
+            Nace en Milán, en una familia distinguida.
+            Desde joven, él y su hermano Fabrizio desean
+            servir a la Iglesia.
+          </p>
+        </article>
 
-            <h3>31 de mayo de 1612: Se une a las Escuelas Pías</h3>
-            <p>
-                Glicerio y cinco amigos entraron a formar parte
-                de las Escuelas Pías. Su entusiasmo y su deseo de
-                acercar a los niños a Jesús lo convirtieron en catequista.
-            </p>
+        <article class="event">
+          <div class="date">1610–1611</div>
+          <h3>Conoce las Escuelas Pías</h3>
+          <p>
+            Conoce la obra de las Escuelas Pías y a su fundador,
+            san José de Calasanz. Encuentra entre los niños
+            una vocación que marcará su vida.
+          </p>
+        </article>
 
-            <h3>2 de julio de 1617: Comienza el noviciado</h3>
-            <p>
-                Inició su formación para ser religioso escolapio.
-                Lo acompañó el beato Pedro Casani, su maestro.
-            </p>
+        <article class="event">
+          <div class="date">1611–1612</div>
+          <h3>Discernimiento vocacional</h3>
+          <p>
+            Busca consejo y acompañamiento espiritual.
+            Este proceso lo ayuda a conocerse mejor y comienza
+            a colaborar con las Escuelas Pías.
+          </p>
+        </article>
 
-            <h3>15 de febrero de 1618: Muerte</h3>
-            <p>
-                Murió en Roma a los 29 años, después de dedicar
-                su vida al servicio de los demás.
-            </p>
+        <article class="event">
+          <div class="date">31 de mayo de 1612</div>
+          <h3>Se une al grupo de Calasanz</h3>
+          <p>
+            Glicerio y cinco amigos entran a formar parte
+            de las Escuelas Pías. Se destaca por su trabajo
+            como catequista entre los niños.
+          </p>
+        </article>
 
-            <h3>31 de mayo de 1931: Es declarado Venerable</h3>
-            <p>
-                Sus virtudes heroicas fueron aprobadas y fue declarado
-                digno de veneración con el título de Venerable.
-            </p>
-        </section>
+        <article class="event">
+          <div class="date">2 de julio de 1617</div>
+          <h3>Comienza el noviciado</h3>
+          <p>
+            Inicia su formación para ser religioso escolapio,
+            acompañado por el beato Pedro Casani.
+          </p>
+        </article>
 
-        <hr>
+        <article class="event">
+          <div class="date">15 de febrero de 1618</div>
+          <h3>Muere en Roma</h3>
+          <p>
+            Muere en Roma a los 29 años, después de dedicar
+            su vida al servicio de los niños y a su vocación
+            religiosa.
+          </p>
+        </article>
 
-        <section id="obra">
-            <h2>Su obra</h2>
+        <article class="event">
+          <div class="date">31 de mayo de 1931</div>
+          <h3>Es declarado Venerable</h3>
+          <p>
+            Sus virtudes heroicas son aprobadas y recibe
+            el título de Venerable.
+          </p>
+        </article>
 
-            <p>
-                Glicerio fue uno de los colaboradores más conocidos
-                de san José de Calasanz durante los primeros años
-                de su apostolado educativo en Roma.
-            </p>
+      </div>
+    </section>
 
-            <h3>Servicio a los niños</h3>
-            <p>
-                Propuso acompañar a los niños por las calles cuando
-                regresaban a sus casas, preocupándose por su bienestar.
-            </p>
+    <!-- MAPA DE LOS LUGARES -->
+    <section id="mapa" class="section-card">
+      <p class="section-kicker">Lugares importantes</p>
+      <h2>Mapa de los lugares donde estuvo</h2>
 
-            <h3>Catequesis y evangelización</h3>
-            <p>
-                Su labor como catequista enriqueció la obra
-                evangelizadora de las Escuelas Pías. Deseaba que
-                los niños conocieran a Jesús, vivieran el Evangelio
-                y amaran a la Iglesia.
-            </p>
+      <p>
+        Glicerio nació en Milán y desarrolló su labor con
+        las Escuelas Pías en Roma, ciudad en la que murió.
+      </p>
 
-            <p>
-                También presentó un plan al cardenal Federico Borromeo
-                para que las escuelas fueran centros de evangelización
-                y catequesis.
-            </p>
-        </section>
+      <div class="map-grid">
 
-        <hr>
+        <div class="map-card">
+          <h3>Milán, Italia</h3>
+          <p>Ciudad donde nació en 1588.</p>
 
-        <section id="testimonio">
-            <h2>Su testimonio</h2>
+          <iframe
+            title="Mapa de Milán, Italia"
+            src="https://www.google.com/maps?q=Milano%2C%20Italia&output=embed"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
 
-            <p>
-                Al llegar a Roma, Glicerio deseaba hacer carrera
-                y llevaba una vida de riqueza y vanidad. Con el tiempo,
-                respondió generosamente a su vocación y se entregó
-                a ayudar al prójimo.
-            </p>
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Milano%2C%20Italia"
+            target="_blank"
+            rel="noopener noreferrer">
+            Abrir mapa de Milán ↗️
+          </a>
+        </div>
 
-            <p>
-                Su entusiasmo juvenil y su deseo de servir a los niños
-                lo convirtieron en un catequista comprometido.
-            </p>
+        <div class="map-card">
+          <h3>Roma, Italia</h3>
+          <p>
+            Ciudad donde colaboró con las Escuelas Pías
+            y murió en 1618.
+          </p>
 
-            <blockquote>
-                «Jesús y María tengan siempre ocupado todo el corazón
-                de nuestro carísimo en el Señor, Abate Glicerio».
-            </blockquote>
+          <iframe
+            title="Mapa de Roma, Italia"
+            src="https://www.google.com/maps?q=Roma%2C%20Italia&output=embed"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
 
-            <p>
-                Estas palabras aparecen al comienzo de la única carta
-                de Calasanz a Glicerio que se conserva, según el
-                material consultado.
-            </p>
-        </section>
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Roma%2C%20Italia"
+            target="_blank"
+            rel="noopener noreferrer">
+            Abrir mapa de Roma ↗️
+          </a>
+        </div>
 
-        <hr>
+      </div>
 
-        <section id="iglesia">
-            <h2>La Iglesia y las Escuelas Pías</h2>
+      <p class="map-note">
+        Los mapas indican las ciudades relacionadas con su
+        biografía, no direcciones históricas exactas.
+      </p>
+    </section>
 
-            <h3>Dentro de la Iglesia</h3>
-            <p>
-                El proceso de beatificación se inició el 16 de abril
-                de 1895. El 31 de mayo de 1931 fue declarado Venerable,
-                después de que se aprobaran sus virtudes heroicas.
-            </p>
+    <!-- OBRA -->
+    <section id="obra" class="section-card">
+      <p class="section-kicker">Educación y evangelización</p>
+      <h2>Su obra</h2>
 
-            <h3>Dentro de las Escuelas Pías</h3>
-            <p>
-                Entró en el grupo de Calasanz en 1612 e inició
-                el noviciado en 1617. Contribuyó con su catequesis
-                y su propuesta de acompañar a los niños hasta sus hogares.
-            </p>
-        </section>
+      <p>
+        Glicerio fue uno de los colaboradores de san José
+        de Calasanz durante los primeros años de su apostolado
+        educativo en Roma.
+      </p>
 
-        <hr>
+      <div class="two-col">
+        <div class="mini-card">
+          <h3>Servicio a los niños</h3>
+          <p>
+            Propuso acompañar a los niños cuando volvían
+            a sus casas, cuidando de ellos más allá del tiempo
+            en la escuela.
+          </p>
+        </div>
 
-        <section id="legado">
-            <h2>Su legado</h2>
+        <div class="mini-card">
+          <h3>Catequesis</h3>
+          <p>
+            Deseaba que los muchachos conocieran a Jesús,
+            vivieran el Evangelio y amaran a la Iglesia.
+          </p>
+        </div>
+      </div>
 
-            <p>
-                Su legado está relacionado con la entrega a los niños,
-                la catequesis, la evangelización y la educación dentro
-                de las Escuelas Pías.
-            </p>
+      <p>
+        También presentó un plan al cardenal Federico Borromeo
+        para que las escuelas fueran centros de evangelización
+        y catequesis.
+      </p>
+    </section>
 
-            <p>
-                Su ejemplo de servicio a los niños y a los pobres
-                continúa formando parte de la memoria de la tradición
-                escolapia.
-            </p>
-        </section>
+    <!-- TESTIMONIO -->
+    <section id="testimonio" class="section-card">
+      <p class="section-kicker">Un cambio de vida</p>
+      <h2>Su testimonio</h2>
 
-        <hr>
+      <p>
+        Al llegar a Roma, Glicerio deseaba hacer carrera
+        eclesiástica. Con el tiempo, respondió generosamente
+        a su vocación y se entregó a ayudar al prójimo.
+      </p>
 
-        <section id="oracion">
-            <h2>Oración al Venerable Glicerio</h2>
+      <p>
+        Su entusiasmo y su deseo de servir a los niños
+        lo convirtieron en un catequista comprometido
+        con las Escuelas Pías.
+      </p>
 
-            <p>
-                Dios grande y misericordioso,
-            </p>
+      <blockquote class="quote">
+        «Jesús y María tengan siempre ocupado todo el corazón
+        de nuestro carísimo en el Señor, Abate Glicerio».
+      </blockquote>
 
-            <p>
-                que has hecho del venerable Glicerio
-                un instrumento dócil para evangelizar a los niños;
-            </p>
+      <p>
+        Estas palabras aparecen al comienzo de la única carta
+        de Calasanz a Glicerio que se conserva, según el
+        material consultado.
+      </p>
+    </section>
 
-            <p>
-                haz que su pronta beatificación contribuya a realizar
-                con mayor empeño este ministerio en la Iglesia.
-            </p>
+    <!-- IGLESIA Y ESCUELAS PÍAS -->
+    <section id="iglesia" class="section-card">
+      <p class="section-kicker">Su lugar en la historia</p>
+      <h2>La Iglesia y las Escuelas Pías</h2>
 
-            <p>
-                Por Jesucristo Nuestro Señor. Amén.
-            </p>
-        </section>
+      <div class="two-col">
+        <div class="mini-card">
+          <h3>Dentro de la Iglesia</h3>
+          <p>
+            El proceso de beatificación se inició el
+            16 de abril de 1895. En 1931 fue declarado
+            Venerable.
+          </p>
+        </div>
 
-        <hr>
+        <div class="mini-card">
+          <h3>Dentro de las Escuelas Pías</h3>
+          <p>
+            Entró en el grupo de Calasanz en 1612 e inició
+            el noviciado en 1617. Contribuyó mediante
+            su catequesis y su servicio a los niños.
+          </p>
+        </div>
+      </div>
+    </section>
 
-        <section id="fuentes">
-            <h2>Fuentes consultadas</h2>
+    <!-- LEGADO -->
+    <section id="legado" class="section-card">
+      <p class="section-kicker">Una huella que permanece</p>
+      <h2>Su legado</h2>
 
-            <ol>
-                <li>
-                    <a href="https://vidas-santas.blogspot.com/2013/02/venerable-glicerio-landriani-de-cristo.html">
-                        Vidas Santas: Venerable Glicerio Landriani
-                    </a>
-                </li>
+      <p>
+        El legado de Glicerio Landriani está relacionado
+        con su entrega a los niños, la catequesis,
+        la evangelización y la educación dentro de
+        las Escuelas Pías.
+      </p>
 
-                <li>
-                    <a href="https://www.landriani.org/vida/">
-                        Landriani.org: Vida
-                    </a>
-                </li>
+      <p>
+        Su ejemplo de servicio continúa formando parte
+        de la memoria de la tradición escolapia.
+      </p>
+    </section>
 
-                <li>
-                    <a href="https://dialnet.unirioja.es/servlet/articulo?codigo=9247456">
-                        Dialnet: artículo sobre Glicerio Landriani
-                    </a>
-                </li>
-            </ol>
-        </section>
+    <!-- ORACIÓN -->
+    <section id="oracion" class="section-card">
+      <p class="section-kicker">Oración</p>
+      <h2 class="center">Oración al Venerable Glicerio</h2>
 
-    </main>
+      <div class="prayer">
+        <p>Dios grande y misericordioso,</p>
+        <p>que has hecho del venerable Glicerio</p>
+        <p>un instrumento dócil para evangelizar a los niños;</p>
+        <p>haz que su pronta beatificación</p>
+        <p>contribuya a realizar con mayor empeño</p>
+        <p>este ministerio en la Iglesia.</p>
 
-    <hr>
+        <p class="prayer-ending">
+          <strong>Por Jesucristo Nuestro Señor. Amén.</strong>
+        </p>
+      </div>
+    </section>
 
-    <footer>
-        <p><strong>Venerable Glicerio Landriani</strong></p>
-        <p>Escolapio, catequista y modelo de entrega.</p>
-        <p>Trabajo realizado por Zahira Inocente, Morena Ignacio y Daiana Cruz.</p>
-        <a href="#inicio">Volver al inicio</a>
-    </footer>
+    <!-- FUENTES -->
+    <section id="fuentes" class="section-card sources">
+      <p class="section-kicker">Para seguir leyendo</p>
+      <h2>Fuentes consultadas</h2>
 
-</body>
-</html>
+      <ol>
+        <li>
+          <a
+            href="https://vidas-santas.blogspot.com/2013/02/venerable-glicerio-landriani-de-cristo.html"
+            target="_blank"
+            rel="noopener noreferrer">
+            Vidas Santas: Venerable Glicerio Landriani
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://www.landriani.org/vida/"
+            target="_blank"
+            rel="noopener noreferrer">
+            Landriani.org: Vida
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://dialnet.unirioja.es/servlet/articulo?codigo=9247456"
+            target="_blank"
+            rel="noopener noreferrer">
+            Dialnet: artículo sobre Glicerio Landriani
+          </a>
+        </li>
+      </ol>
+    </section>
+
+  </main>
+
+  
