@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venerable Glicerio Landriani</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="CSS/estilos.css">
 </head>
 
 <body>
@@ -47,7 +47,7 @@
     </div>
   </header>
 
-  <main>
+<main>
 
     <!-- QUIÉN FUE -->
     <section id="quien-fue" class="section-card">
@@ -78,7 +78,7 @@
         </div>
 
         <div class="image-placeholder">
-          <div class><img src=../img/glicerio.jpg></div>
+          <div class><img src="img/glicerio.jpg" alt="Glicerio Landriani"></div>
           <strong>Glicerio Landriani</strong>
           
         </div>
@@ -361,49 +361,38 @@
     <!--CUESTIONARIO-->
     <section id="cuestionario" class="section-card">
           <p>¡Poné a prueba tus conocimientos!</p>
-    <h2>¿Cuánto sabés sobre Glicerio Landriani?</h2>
-    <p>Respondé las cinco preguntas y descubrí cuánto aprendiste sobre su vida.</p>
-
-    <div id="pregunta1">
-        <h3>1. ¿En qué ciudad nació Glicerio?</h3>
-        <button id="p1a">Roma</button>
-        <button id="p1b">Milán</button>
-        <button id="p1c">Florencia</button>
-    </div>
-
-    <div id="pregunta2" style="display:none;">
-        <h3>2. ¿En qué año nació?</h3>
-        <button id="p2a">1588</button>
-        <button id="p2b">1612</button>
-        <button id="p2c">1618</button>
-    </div>
-
-    <div id="pregunta3" style="display:none;">
-        <h3>3. ¿En qué ciudad murió?</h3>
-        <button id="p3a">Milán</button>
-        <button id="p3b">Roma</button>
-        <button id="p3c">Venecia</button>
-    </div>
-
-    <div id="pregunta4" style="display:none;">
-        <h3>4. ¿Con quién colaboró Glicerio?</h3>
-        <button id="p4a">San José de Calasanz</button>
-        <button id="p4b">Pedro Casani</button>
-        <button id="p4c">Federico Borromeo</button>
-    </div>
-
-    <div id="pregunta5" style="display:none;">
-        <h3>5. ¿En qué año fue declarado Venerable?</h3>
-        <button id="p5a">1895</button>
-        <button id="p5b">1931</button>
-        <button id="p5c">1618</button>
-    </div>
-
-    <div id="resultadoFinal" style="display:none;">
-        <h3>¡Terminaste!</h3>
-        <p id="puntajeFinal"></p>
-        <button id="reiniciar">Volver a intentar</button>
-    </div>
+          <h2>¿Cuánto sabés sobre Glicerio Landriani?</h2>
+          <p>Seleccioná una respuesta para cada pregunta y después comprobá tu resultado.</p>
+          
+          <h3>1. ¿En qué ciudad nació Glicerio?</h3>
+          <input type="radio" name="p1" value="a"> Roma<br>
+          <input type="radio" name="p1" value="b"> Milán<br>
+          <input type="radio" name="p1" value="c"> Florencia<br>
+          
+          <h3>2. ¿En qué año nació?</h3>
+          <input type="radio" name="p2" value="a"> 1588<br>
+          <input type="radio" name="p2" value="b"> 1612<br>
+          <input type="radio" name="p2" value="c"> 1618<br>
+          <h3>3. ¿En qué ciudad murió?</h3>
+          <input type="radio" name="p3" value="a"> Milán<br>
+          <input type="radio" name="p3" value="b"> Roma<br>
+          <input type="radio" name="p3" value="c"> Venecia<br>
+          
+          <h3>4. ¿Con quién colaboró Glicerio?</h3>
+          <input type="radio" name="p4" value="a"> San José de Calasanz<br>
+          <input type="radio" name="p4" value="b"> Pedro Casani<br>
+          <input type="radio" name="p4" value="c"> Federico Borromeo<br>
+          
+          <h3>5. ¿En qué año fue declarado Venerable?</h3>
+          <input type="radio" name="p5" value="a"> 1895<br>
+          <input type="radio" name="p5" value="b"> 1931<br>
+          <input type="radio" name="p5" value="c"> 1618<br>
+          
+          <br>
+          <button id="comprobar" type="button">Comprobar</button>
+          <button id="reiniciar" type="button">Reiniciar</button>
+          
+          <p id="resultado"></p>
     </section>
 
     <!-- FUENTES -->
@@ -440,7 +429,7 @@
         </li>
       </ol>
     </section>
-    <script src="script.js"></script>
+    <script src="JS/script.js"></script>
 </body>
   </main>
   
