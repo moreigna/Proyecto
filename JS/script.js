@@ -1,96 +1,51 @@
-let puntaje = 0;
+// Comprobar las respuestas
+document.getElementById("comprobar").addEventListener("click", function() {
 
-// Funcion para comprobar las respuestas
-function responder(esCorrecta, numeroPregunta) {
+    let puntaje = 0;
 
-    if (esCorrecta) {
-        puntaje++;
-        alert("¡Correcto!");
-    } else {
-        alert("Respuesta incorrecta. ¡Seguimos!");
+    let p1 = document.querySelector('input[name="p1"]:checked');
+    let p2 = document.querySelector('input[name="p2"]:checked');
+    let p3 = document.querySelector('input[name="p3"]:checked');
+    let p4 = document.querySelector('input[name="p4"]:checked');
+    let p5 = document.querySelector('input[name="p5"]:checked');
+
+    // Comprobar que todas las preguntas estén respondidas
+    if (!p1 || !p2 || !p3 || !p4 || !p5) {
+        document.getElementById("resultado").innerHTML =
+            "Tenés que responder todas las preguntas.";
+        return;
     }
 
-    document.getElementById("pregunta" + numeroPregunta).style.display = "none";
+    // Respuestas correctas
+    if (p1.value === "b") puntaje++;
+    if (p2.value === "a") puntaje++;
+    if (p3.value === "b") puntaje++;
+    if (p4.value === "a") puntaje++;
+    if (p5.value === "b") puntaje++;
 
-    if (numeroPregunta < 5) {
-        document.getElementById("pregunta" + (numeroPregunta + 1)).style.display = "block";
+    let mensaje = "<h3>Resultado: " + puntaje + "/5 puntos</h3>";
+
+    if (puntaje === 5) {
+        mensaje += "¡Excelente! Respondiste todas correctamente.";
+    } else if (puntaje >= 3) {
+        mensaje += "¡Buen trabajo! Conocés bastante sobre Glicerio.";
     } else {
-        document.getElementById("resultadoFinal").style.display = "block";
-        document.getElementById("puntajeFinal").textContent =
-            "Obtuviste " + puntaje + " de 5 respuestas correctas.";
+        mensaje += "¡Seguí aprendiendo sobre su vida e historia!";
     }
-}
 
-// Pregunta 1
-document.getElementById("p1a").addEventListener("click", function() {
-    responder(false, 1);
-});
+    document.getElementById("resultado").innerHTML = mensaje;
 
-document.getElementById("p1b").addEventListener("click", function() {
-    responder(true, 1);
-});
-
-document.getElementById("p1c").addEventListener("click", function() {
-    responder(false, 1);
-});
-
-// Pregunta 2
-document.getElementById("p2a").addEventListener("click", function() {
-    responder(true, 2);
-});
-
-document.getElementById("p2b").addEventListener("click", function() {
-    responder(false, 2);
-});
-
-document.getElementById("p2c").addEventListener("click", function() {
-    responder(false, 2);
-});
-
-// Pregunta 3
-document.getElementById("p3a").addEventListener("click", function() {
-    responder(false, 3);
-});
-
-document.getElementById("p3b").addEventListener("click", function() {
-    responder(false, 3);
-});
-
-document.getElementById("p3c").addEventListener("click", function() {
-    responder(true, 3);
-});
-
-// Pregunta 4
-document.getElementById("p4a").addEventListener("click", function() {
-    responder(true, 4);
-});
-
-document.getElementById("p4b").addEventListener("click", function() {
-    responder(false, 4);
-});
-
-document.getElementById("p4c").addEventListener("click", function() {
-    responder(false, 4);
-});
-
-// Pregunta 5
-document.getElementById("p5a").addEventListener("click", function() {
-    responder(false, 5);
-});
-
-document.getElementById("p5b").addEventListener("click", function() {
-    responder(true, 5);
-});
-
-document.getElementById("p5c").addEventListener("click", function() {
-    responder(false, 5);
 });
 
 // Reiniciar el cuestionario
 document.getElementById("reiniciar").addEventListener("click", function() {
 
-    puntaje = 0;
+    let opciones = document.querySelectorAll('input[type="radio"]');
 
-    document.getElementById("resultadoFinal").style.display = "none";
-    document.getElementById("pregunta1").style.display = "block";
+    for (let opcion of opciones) {
+        opcion.checked = false;
+    }
+
+    document.getElementById("resultado").innerHTML = "";
+
 });
