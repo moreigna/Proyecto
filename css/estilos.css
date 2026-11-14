@@ -328,12 +328,26 @@ p {
 /* PIE DE PÁGINA */
 footer {
   text-align: center;
-  padding: 28px 20px;
-  background: var(--navy);
+  padding: 48px 20px;
+  background-color: #42505f;
   color: #e8eef1;
   font-size: 0.9rem;
 }
 
 footer p {
-  margin: 4px 0;
+  margin: 5px 0;
+}
+
+footer strong{
+  color: #e4ddd0;
+  font-size: 20px;
+}
+
+footer a {
+  display:inline-block;
+  margin-top: 22px;
+  padding: 10px 20px;
+  border: #e8eef1;
+  border-radius: 22;
+  color: #000;
 }
